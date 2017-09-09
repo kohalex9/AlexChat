@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		8759CC3E1F63C73600A334C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759CC3D1F63C73600A334C7 /* AppDelegate.swift */; };
-		8759CC401F63C73600A334C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759CC3F1F63C73600A334C7 /* ViewController.swift */; };
 		8759CC431F63C73600A334C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8759CC411F63C73600A334C7 /* Main.storyboard */; };
 		8759CC451F63C73600A334C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8759CC441F63C73600A334C7 /* Assets.xcassets */; };
 		8759CC481F63C73600A334C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8759CC461F63C73600A334C7 /* LaunchScreen.storyboard */; };
+		8759CC501F63CED000A334C7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8759CC4F1F63CED000A334C7 /* GoogleService-Info.plist */; };
+		8759CC521F63CF6F00A334C7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759CC511F63CF6F00A334C7 /* LoginViewController.swift */; };
+		8759CC541F63CF9000A334C7 /* ChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8759CC531F63CF9000A334C7 /* ChannelListViewController.swift */; };
+		98F8DB5EB31951ECA4A7B76C /* Pods_70_AlexChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04EA2D48B9BB728A5902F17 /* Pods_70_AlexChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86B32DF3362420219F2A3719 /* Pods-70_AlexChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-70_AlexChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-70_AlexChat/Pods-70_AlexChat.debug.xcconfig"; sourceTree = "<group>"; };
 		8759CC3A1F63C73600A334C7 /* 70_AlexChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 70_AlexChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8759CC3D1F63C73600A334C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8759CC3F1F63C73600A334C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8759CC421F63C73600A334C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8759CC441F63C73600A334C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8759CC471F63C73600A334C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8759CC491F63C73600A334C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8759CC4F1F63CED000A334C7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8759CC511F63CF6F00A334C7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8759CC531F63CF9000A334C7 /* ChannelListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelListViewController.swift; sourceTree = "<group>"; };
+		8D8CAC2A994D8F6D1E407429 /* Pods-70_AlexChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-70_AlexChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-70_AlexChat/Pods-70_AlexChat.release.xcconfig"; sourceTree = "<group>"; };
+		C04EA2D48B9BB728A5902F17 /* Pods_70_AlexChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_70_AlexChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98F8DB5EB31951ECA4A7B76C /* Pods_70_AlexChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B7999A5D8F9735C82FF895D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86B32DF3362420219F2A3719 /* Pods-70_AlexChat.debug.xcconfig */,
+				8D8CAC2A994D8F6D1E407429 /* Pods-70_AlexChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8759CC311F63C73600A334C7 = {
 			isa = PBXGroup;
 			children = (
 				8759CC3C1F63C73600A334C7 /* 70_AlexChat */,
 				8759CC3B1F63C73600A334C7 /* Products */,
+				6B7999A5D8F9735C82FF895D /* Pods */,
+				FEC9F5BA050807FDBB512B98 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +75,23 @@
 			isa = PBXGroup;
 			children = (
 				8759CC3D1F63C73600A334C7 /* AppDelegate.swift */,
-				8759CC3F1F63C73600A334C7 /* ViewController.swift */,
+				8759CC511F63CF6F00A334C7 /* LoginViewController.swift */,
+				8759CC531F63CF9000A334C7 /* ChannelListViewController.swift */,
 				8759CC411F63C73600A334C7 /* Main.storyboard */,
 				8759CC441F63C73600A334C7 /* Assets.xcassets */,
 				8759CC461F63C73600A334C7 /* LaunchScreen.storyboard */,
 				8759CC491F63C73600A334C7 /* Info.plist */,
+				8759CC4F1F63CED000A334C7 /* GoogleService-Info.plist */,
 			);
 			path = 70_AlexChat;
+			sourceTree = "<group>";
+		};
+		FEC9F5BA050807FDBB512B98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C04EA2D48B9BB728A5902F17 /* Pods_70_AlexChat.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8759CC4C1F63C73600A334C7 /* Build configuration list for PBXNativeTarget "70_AlexChat" */;
 			buildPhases = (
+				8B39E75898218AF2679576B8 /* [CP] Check Pods Manifest.lock */,
 				8759CC361F63C73600A334C7 /* Sources */,
 				8759CC371F63C73600A334C7 /* Frameworks */,
 				8759CC381F63C73600A334C7 /* Resources */,
+				37B5958285D4614FB0ECE89F /* [CP] Embed Pods Frameworks */,
+				6DB0E01ACFAC26A7E297015D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,17 +160,83 @@
 				8759CC481F63C73600A334C7 /* LaunchScreen.storyboard in Resources */,
 				8759CC451F63C73600A334C7 /* Assets.xcassets in Resources */,
 				8759CC431F63C73600A334C7 /* Main.storyboard in Resources */,
+				8759CC501F63CED000A334C7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37B5958285D4614FB0ECE89F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-70_AlexChat/Pods-70_AlexChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-70_AlexChat/Pods-70_AlexChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DB0E01ACFAC26A7E297015D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-70_AlexChat/Pods-70_AlexChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B39E75898218AF2679576B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-70_AlexChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8759CC361F63C73600A334C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8759CC401F63C73600A334C7 /* ViewController.swift in Sources */,
+				8759CC541F63CF9000A334C7 /* ChannelListViewController.swift in Sources */,
+				8759CC521F63CF6F00A334C7 /* LoginViewController.swift in Sources */,
 				8759CC3E1F63C73600A334C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +360,7 @@
 		};
 		8759CC4D1F63C73600A334C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B32DF3362420219F2A3719 /* Pods-70_AlexChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JYP92526QQ;
@@ -274,6 +374,7 @@
 		};
 		8759CC4E1F63C73600A334C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D8CAC2A994D8F6D1E407429 /* Pods-70_AlexChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JYP92526QQ;
@@ -304,6 +405,7 @@
 				8759CC4E1F63C73600A334C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
