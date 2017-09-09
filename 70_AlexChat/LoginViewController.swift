@@ -7,29 +7,40 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var stealthSignInBtn: UIButton! {
+        didSet {
+            stealthSignInBtn.addTarget(self, action: #selector(didStealthLoginSuccessfully), for: .touchUpInside)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func didStealthLoginSuccessfully() {
+        if emailTextField.text != "" {
+            Auth.auth().signInAnonymously(completion: { (user, error) in
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                
+            })
+        }
     }
-    */
-
 }
+
+
+
+
+
+
+
+
+
