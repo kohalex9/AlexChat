@@ -14,11 +14,19 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signInBtn: UIButton!
+    @IBOutlet weak var signInBtn: UIButton! {
+        didSet {
+            signInBtn.addTarget(self, action: #selector(signIn), for: .touchUpInside)
+        }
+    }
     @IBOutlet weak var signUpBtn: UIButton! {
         didSet {
             signUpBtn.addTarget(self, action: #selector(signUp), for: .touchUpInside)
         }
+    }
+    
+    func signIn() {
+        
     }
     
     func signUp() {
