@@ -26,7 +26,32 @@ class LoginViewController: UIViewController {
     }
     
     func signIn() {
+        //Sign in the user before the user can go to chatlistvc
+        //1.
+        guard let email = emailTextField.text,
+            let password = passwordTextField.text else {return}
         
+        //2.
+        if emailTextField.text == "" {
+            createErrorVC("Empty email fill", "Please input valid email")
+        } else if passwordTextField.text == "" {
+            createErrorVC("Empty password fill", "Please input valid password")
+        }
+        
+        //3. 
+        Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+            if let error = error {
+                print(error.localizedDescription)
+                self.createErrorVC("Error", error.localizedDescription)
+            }
+            
+            //if user is valid, go to ChatListVC
+            if let user = user {
+                guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "chatNavigationController") as? UINavigationController else {return}
+                
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
     }
     
     func signUp() {
@@ -35,12 +60,20 @@ class LoginViewController: UIViewController {
         navigationController?.pushViewController(targetVC, animated: true)
     }
     
+    func createErrorVC(_ title: String, _ message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        //Hide the navigation bar
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }

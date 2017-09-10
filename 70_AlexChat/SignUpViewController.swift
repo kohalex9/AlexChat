@@ -68,6 +68,11 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Unhide the navigation bar
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
 
 
 }
