@@ -16,6 +16,8 @@
 		87CE49E51F64F244008AF2F2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE49E41F64F244008AF2F2 /* SignUpViewController.swift */; };
 		87CE49E71F650541008AF2F2 /* ChatListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE49E61F650541008AF2F2 /* ChatListsViewController.swift */; };
 		87CE49E91F6518F9008AF2F2 /* ChatListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE49E81F6518F9008AF2F2 /* ChatListTableViewCell.swift */; };
+		87CE49EB1F653027008AF2F2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE49EA1F653027008AF2F2 /* ChatViewController.swift */; };
+		87CE49ED1F65311C008AF2F2 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE49EC1F65311C008AF2F2 /* ChatTableViewCell.swift */; };
 		98F8DB5EB31951ECA4A7B76C /* Pods_70_AlexChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04EA2D48B9BB728A5902F17 /* Pods_70_AlexChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		87CE49E41F64F244008AF2F2 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		87CE49E61F650541008AF2F2 /* ChatListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListsViewController.swift; sourceTree = "<group>"; };
 		87CE49E81F6518F9008AF2F2 /* ChatListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListTableViewCell.swift; sourceTree = "<group>"; };
+		87CE49EA1F653027008AF2F2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		87CE49EC1F65311C008AF2F2 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		8D8CAC2A994D8F6D1E407429 /* Pods-70_AlexChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-70_AlexChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-70_AlexChat/Pods-70_AlexChat.release.xcconfig"; sourceTree = "<group>"; };
 		C04EA2D48B9BB728A5902F17 /* Pods_70_AlexChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_70_AlexChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,6 +87,8 @@
 				87CE49E41F64F244008AF2F2 /* SignUpViewController.swift */,
 				87CE49E61F650541008AF2F2 /* ChatListsViewController.swift */,
 				87CE49E81F6518F9008AF2F2 /* ChatListTableViewCell.swift */,
+				87CE49EA1F653027008AF2F2 /* ChatViewController.swift */,
+				87CE49EC1F65311C008AF2F2 /* ChatTableViewCell.swift */,
 				8759CC411F63C73600A334C7 /* Main.storyboard */,
 				8759CC441F63C73600A334C7 /* Assets.xcassets */,
 				8759CC461F63C73600A334C7 /* LaunchScreen.storyboard */,
@@ -245,6 +251,8 @@
 				87CE49E91F6518F9008AF2F2 /* ChatListTableViewCell.swift in Sources */,
 				87CE49E51F64F244008AF2F2 /* SignUpViewController.swift in Sources */,
 				87CE49E71F650541008AF2F2 /* ChatListsViewController.swift in Sources */,
+				87CE49ED1F65311C008AF2F2 /* ChatTableViewCell.swift in Sources */,
+				87CE49EB1F653027008AF2F2 /* ChatViewController.swift in Sources */,
 				8759CC3E1F63C73600A334C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

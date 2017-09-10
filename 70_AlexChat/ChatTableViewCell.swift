@@ -1,5 +1,5 @@
 //
-//  ChatListTableViewCell.swift
+//  ChatTableViewCell.swift
 //  70_AlexChat
 //
 //  Created by Alex Koh on 10/09/2017.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ChatListTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var msgLabel: UILabel!
-    @IBOutlet weak var imageLabel: UIImageView!
-    
+class ChatTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var receiverLabel: UILabel!
+    @IBOutlet weak var senderLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
